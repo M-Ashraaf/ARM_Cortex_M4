@@ -1,7 +1,7 @@
 /**************************************************************************/
 /*Author      : Mohamed Ashraf Abdelhamid							      */
 /*File Name   : GPIO_private.h                                            */
-/*Bus     	  : AHB1									  		          */
+/*Layer       : MCAL									  		          */
 /*Description : This file contains private parameters of GPIO module	  */
 /*Date        : 11 May 2023                                               */
 /**************************************************************************/
@@ -17,6 +17,10 @@ typedef struct
 	u32 PUPDR ;			//This Register is to Select Either Pull Up or Pull Down Input.
 	u32 IDR;			//This Register is to Get The Value of Input Pins.
 	u32 ODR;			//This Register is to Set The Value of Output Pins.
+	u32 BSRR;           //This Register is to Set/Reset Any Pin in Atomic Access
+	u32 LCKR;			//This Register is to Lock The Configuration of Any Pin
+	u32	AFRL;			//This Register is to Set The Alternative Function of Pins (0:7)
+	u32	AFRH;			//This Register is to Set The Alternative Function of Pins (8:15)
 
 }GPIO_REG_t;
 

@@ -1,7 +1,7 @@
 /**************************************************************************/
 /*Author      : Mohamed Ashraf Abdelhamid							      */
 /*File Name   : GPIO_config.h                                          	  */
-/*Bus	      : AHB1									  		          */
+/*Layer	      : MCAL									  		          */
 /*Description : This file contains configurable parameters of GPIO module */
 /*Date        : 11 May 2023	                                              */
 /**************************************************************************/
